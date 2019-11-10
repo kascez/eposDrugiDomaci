@@ -99,14 +99,16 @@ h1 {
 }
 
 .btn-full {
-    background-color: transparent;
+    background-color: #fff;
     color: #b80909;
     margin-right: 25px;
     border: 1px solid #b80909;
 }
 
 .btn-full:hover {
-    background-color: #fff;
+    background-color: #b80909;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 .btn-nav {
@@ -124,9 +126,9 @@ h1 {
 }
 
 .social-icons {
-    right: 72px;
-    bottom: 35px;
-    position: absolute;
+    right: 22px;
+    bottom: 11px;
+    position: fixed;
 }
 
 .social-icons ul li {
@@ -141,15 +143,20 @@ h1 {
     border: 1px solid #b80909;
     padding: 5px;
     display: block;
+    background-color: white;
 }
 
 .social-icons ul li a:hover {
-    background-color: #fff;
+    background-color: #b80909;
+    color: #fff;
+    border: 1px solid white;
 }
 
 @keyframes colorchange {
     0% {color: #fff;}
-    50% {color: #b80909;}
+    50% {color: #b80909;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
     100% {color: #fff;}
 }
 
@@ -169,7 +176,13 @@ h1 {
 @media only screen and (max-width: 998px) {
     h1 {
         font-size: 120%;
+    }
 
+    .main-nav li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 20px;
+        margin-right: 10px;
     }
 }
 
@@ -207,6 +220,16 @@ h1 {
 
     h1 {
         font-size: 105%;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .main-content {
+        width: 1180px;
+        position: absolute;
+        top: 80%;
+        left: 70%;
+        transform: translate(-50%, -50%);
     }
 }
 
