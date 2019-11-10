@@ -121,6 +121,11 @@ h1 {
     background-color: #b80909;
 }
 
+.active {
+    border-bottom: 2px solid #1ab8e8;
+    color: #1ab8e8;
+}
+
 .naslov {
     animation: colorchange 1s infinite;
 }
