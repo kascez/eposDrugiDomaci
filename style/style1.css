@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
     color: #fff;
 }
+.home-area {
+    height: 100%;
+    width: 100%;
+}
 
 header {
     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../img/pozadina.png');
