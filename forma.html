@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style5.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="row clearfix">
+            <img src="img/logo1.png" class="logo">
+            <ul class="main-nav animated flipInY" id="check-class">
+                <li class="active"><a href="#">POČETNA</a></li>
+                <li><a href="#">O NAMA</a></li>
+                <li><a href="#">ISKUSTVA</a></li>
+                <li><a href="#">POMOĆ</a></li>
+            </ul>
+            <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i class="fas fa-bars"></i></a>
+        </div>
+    </nav>
+    <div class="simple-form">
+        <form id="registration">
+            <h1>FORMA ZA REGISTRACIJU</h1><br><br>
+            <input type="text" name="fname" id="button" placeholder="Unesite ime"><br><br>
+            <input type="text" name="lname" id="button" placeholder="Unesite prezime"><br><br>
+            <input type="email" name="email" id="button" placeholder="Unesite e-mail"><br><br>
+            <input type="password" name="pass" id="button" placeholder="Unesite lozinku"><br><br>
+            <select id="ph">
+                <option>+381</option>
+                <option>+382</option>
+                <option>+385</option>
+            </select>
+            <input type="number" name="num" placeholder="Unesite broj telefona" id="phone"><br><br>
+            <input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Muško</span><input
+                type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Žensko</span><br><br>
+            <input type="submit" value="Registruj se" id="butt">
+        </form>
+    </div>
+    <script type="text/javascript">
+        function slideshow() {
+            var x = document.getElementById('check-class');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
