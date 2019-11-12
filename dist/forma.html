@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/style5.fefe2dde.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="/style5.fefe2dde.js"></script></head>
+
+<body>
+    <main id="swup" class="transition-fade">
+        <nav>
+            <div class="row clearfix">
+                <img src="/logo1.caab8263.png" class="logo">
+                <ul class="main-nav animated flipInY" id="check-class">
+                    <li><a href="/pocetna.html">POČETNA</a></li>
+                    <li><a href="#">O NAMA</a></li>
+                    <li><a href="#">ISKUSTVA</a></li>
+                    <li><a href="#">POMOĆ</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="simple-form">
+            <form action="#" onsubmit="return validation()" id="registration">
+                <h1>FORMA ZA REGISTRACIJU</h1><br><br>
+                <input type="text" name="fname" class="form-control" id="fname" placeholder="Unesite ime"><br><span id="username" class="text-danger font-weight-bold"></span><br>
+                <input type="text" name="lname" class="form-control" id="lname" placeholder="Unesite prezime"><br><span id="userlastname" class="text-danger font-weight-bold"></span><br>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Unesite e-mail"><br><span id="useremail" class="text-danger font-weight-bold"></span><br>
+                <input type="password" name="pass" class="form-control" id="pass" placeholder="Unesite lozinku"><br><span id="userpass" class="text-danger font-weight-bold"></span><br>
+                <input type="password" name="pass" class="form-control" id="cpass" placeholder="Potvrdite lozinku"><br><span id="usercpass" class="text-danger font-weight-bold"></span><br>
+                <select id="ph">
+                    <option>+381</option>
+                    <option>+382</option>
+                    <option>+385</option>
+                </select>
+                <input type="number" name="num" class="form-control" placeholder="Unesite broj telefona" id="phone"><br><span id="userphone" class="text-danger font-weight-bold"></span><br>
+                <input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Muško</span><input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Žensko</span><br><br>
+                <input type="submit" value="Registruj se" id="butt">
+            </form>
+        </div>
+
+        <script>function slideshow() {
+  var x = document.getElementById('check-class');
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}</script>
+
+        <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
+        <script src="/validacija.c5edba38.js"></script>
+        
+    </main>
+</body>
+
+</html>

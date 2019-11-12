@@ -11,162 +11,63 @@
 </head>
 
 <body>
-    <nav>
-        <div class="row clearfix">
-            <img src="img/logo1.png" class="logo">
-            <ul class="main-nav animated flipInY" id="check-class">
-                <li><a href="pocetna.html">POČETNA</a></li>
-                <li><a href="#">O NAMA</a></li>
-                <li><a href="#">ISKUSTVA</a></li>
-                <li><a href="#">POMOĆ</a></li>
-            </ul>
-            <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i class="fas fa-bars"></i></a>
+    <main id="swup" class="transition-fade">
+        <nav>
+            <div class="row clearfix">
+                <img src="img/logo1.png" class="logo">
+                <ul class="main-nav animated flipInY" id="check-class">
+                    <li><a href="pocetna.html">POČETNA</a></li>
+                    <li><a href="#">O NAMA</a></li>
+                    <li><a href="#">ISKUSTVA</a></li>
+                    <li><a href="#">POMOĆ</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="simple-form">
+            <form action="#" onsubmit="return validation()" id="registration">
+                <h1>FORMA ZA REGISTRACIJU</h1><br><br>
+                <input type="text" name="fname" class="form-control" id="fname" placeholder="Unesite ime"><br><span
+                    id="username" class="text-danger font-weight-bold"></span><br>
+                <input type="text" name="lname" class="form-control" id="lname" placeholder="Unesite prezime"><br><span
+                    id="userlastname" class="text-danger font-weight-bold"></span><br>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Unesite e-mail"><br><span
+                    id="useremail" class="text-danger font-weight-bold"></span><br>
+                <input type="password" name="pass" class="form-control" id="pass"
+                    placeholder="Unesite lozinku"><br><span id="userpass"
+                    class="text-danger font-weight-bold"></span><br>
+                <input type="password" name="pass" class="form-control" id="cpass"
+                    placeholder="Potvrdite lozinku"><br><span id="usercpass"
+                    class="text-danger font-weight-bold"></span><br>
+                <select id="ph">
+                    <option>+381</option>
+                    <option>+382</option>
+                    <option>+385</option>
+                </select>
+                <input type="number" name="num" class="form-control" placeholder="Unesite broj telefona"
+                    id="phone"><br><span id="userphone" class="text-danger font-weight-bold"></span><br>
+                <input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Muško</span><input
+                    type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    id="but">Žensko</span><br><br>
+                <input type="submit" value="Registruj se" id="butt">
+            </form>
         </div>
-    </nav>
-    <div class="simple-form">
-        <form action="#" onsubmit="return validation()" id="registration">
-            <h1>FORMA ZA REGISTRACIJU</h1><br><br>
-            <input type="text" name="fname" class="form-control" id="fname" placeholder="Unesite ime"><br><span id="username" class="text-danger font-weight-bold" ></span><br>
-            <input type="text" name="lname" class="form-control" id="lname" placeholder="Unesite prezime"><br><span id="userlastname" class="text-danger font-weight-bold" ></span><br>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Unesite e-mail"><br><span id="useremail" class="text-danger font-weight-bold" ></span><br>
-            <input type="password" name="pass" class="form-control" id="pass" placeholder="Unesite lozinku"><br><span id="userpass" class="text-danger font-weight-bold" ></span><br>
-            <input type="password" name="pass" class="form-control" id="cpass" placeholder="Potvrdite lozinku"><br><span id="usercpass" class="text-danger font-weight-bold" ></span><br>
-            <select id="ph">
-                <option>+381</option>
-                <option>+382</option>
-                <option>+385</option>
-            </select>
-            <input type="number" name="num" class="form-control" placeholder="Unesite broj telefona" id="phone"><br><span id="userphone" class="text-danger font-weight-bold" ></span><br>
-            <input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Muško</span><input
-                type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Žensko</span><br><br>
-            <input type="submit" value="Registruj se" id="butt">
-        </form>
-    </div>
-    
-    <script type="text/javascript">
-        function slideshow() {
-            var x = document.getElementById('check-class');
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
 
-    <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function slideshow() {
+                var x = document.getElementById('check-class');
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
 
-    <script type="text/javascript">
-
-        function validation() {
-            var user = document.getElementById('fname').value;
-            var userl = document.getElementById('lname').value;
-            var email = document.getElementById('email').value;
-            var pass = document.getElementById('pass').value;
-            var cpass = document.getElementById('cpass').value;
-            var phone = document.getElementById('phone').value;
-
-            if (user == "") {
-                document.getElementById('username').innerHTML = "* Mesto za ime je prazno";
-                return false;
-            } else {
-                document.getElementById('username').innerHTML = "";
-            }
-            if ((user.length <= 2) || (user.length > 20)) {
-                document.getElementById('username').innerHTML = "* Neodgovarajući format";
-                return false;
-            } else {
-                document.getElementById('username').innerHTML = "";
-            }
-            if(!isNaN(user)) {
-                document.getElementById('username').innerHTML = "* Dozvoljeni su samo karakteri";
-                return false;
-            } else {
-                document.getElementById('username').innerHTML = "";
-            }
-
-            if (userl == "") {
-                document.getElementById('userlastname').innerHTML = "* Mesto za prezime je prazno";
-                return false;
-            } else {
-                document.getElementById('userlastname').innerHTML = "";
-            }
-            if ((userl.length <= 2) || (userl.length > 20)) {
-                document.getElementById('userlastname').innerHTML = "* Neodgovarajući format";
-                return false;
-            } else {
-                document.getElementById('userlastname').innerHTML = "";
-            }
-            if(!isNaN(userl)) {
-                document.getElementById('userlastname').innerHTML = "* Dozvoljeni su samo karakteri";
-                return false;
-            } else {
-                document.getElementById('userlastname').innerHTML = "";
-            }
-
-            if (email == "") {
-                document.getElementById('useremail').innerHTML = "* Mesto za email je prazno";
-                return false;
-            } else {
-                document.getElementById('useremail').innerHTML = "";
-            }
-            if (email.indexOf('@') <= 0) {
-                document.getElementById('useremail').innerHTML = "* Nije dobar format";
-                return false;
-            }
-            if (email.charAt(email.length - 4) != '.') {
-                document.getElementById('useremail').innerHTML = "* Nije dobar format";
-                return false;
-            }
-
-            if (pass == "") {
-                document.getElementById('userpass').innerHTML = "* Mesto za lozinku je prazno";
-                return false;
-            } else {
-                document.getElementById('userpass').innerHTML = "";
-            }
-            if (pass.length <= 8) {
-                document.getElementById('userpass').innerHTML = "* Lozinka mora biti duza od 8 slova";
-                return false;
-            } else {
-                document.getElementById('userpass').innerHTML = "";
-            }
-            if(pass != cpass) {
-                document.getElementById('userpass').innerHTML = "* Lozinke se ne poklapaju";
-                return false;
-            } else {
-                document.getElementById('userpass').innerHTML = "";
-            }
-
-            if (cpass == "") {
-                document.getElementById('usercpass').innerHTML = "* Mesto za potvrdu lozinke je prazno";
-                return false;
-            } else {
-                document.getElementById('usercpass').innerHTML = "";
-            }
-
-            if (phone == "") {
-                document.getElementById('userphone').innerHTML = "* Mesto za broj telefona je prazno";
-                return false;
-            } else {
-                document.getElementById('userphone').innerHTML = "";
-            }
-            if(phone.length < 8 && phone.length > 9) {
-                document.getElementById('userphone').innerHTML = "* Nije dobar format";
-                return false;
-            } else {
-                document.getElementById('userphone').innerHTML = "";
-            }
-            if(isNaN(phone)) {
-                document.getElementById('userphone').innerHTML = "* Samo brojevi!";
-                return false;
-            } else {
-                document.getElementById('userphone').innerHTML = "";
-            }
-        }
-
-    </script>
-
+        <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
+        <script src="js/validacija.js"></script>
+        
+    </main>
 </body>
 
 </html>
