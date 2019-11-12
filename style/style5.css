@@ -34,7 +34,7 @@ body {
     border-radius: 100px;
 }
 
-#button {
+#button, #fname, #lname, #pass, #email, #cpass {
     padding: 10px;
     border-radius: 5px;
     width: 250px;
@@ -133,6 +133,11 @@ body {
 
 .mobile-icon {
     display: none;
+}
+
+.text-danger {
+    color: #b80909;
+    font-size: 70%;
 }
 
 @media only screen and (max-width: 1180px) {
