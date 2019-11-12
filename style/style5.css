@@ -17,10 +17,9 @@ h1 {
 }
 
 body {
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../img/pozadina.png');
+    background: linear-gradient(to right, #141e30, #243b55);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     color: #fff;
     font-size: 20px;
 }
@@ -30,7 +29,7 @@ body {
     background-color: #051019;
     opacity: 0.8;
     padding: 50px 0px;
-    border: 2px solid #b80909;
+    border: 3px solid #b80909;
     border-radius: 100px;
 }
 
