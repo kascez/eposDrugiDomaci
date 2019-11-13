@@ -41,6 +41,11 @@ body {
     padding: 50px 0px;
     border: 3px solid #b80909;
     border-radius: 100px;
+    transition: 0.5s;
+}
+
+#registration:hover {
+    background: linear-gradient(to right, #141e30, #243b55);
 }
 
 #button, #fname, #lname, #pass, #email, #cpass {
@@ -78,6 +83,7 @@ body {
     background-color: #051019;
     border: 2px solid #b80909;
     color: #b80909;
+    transition: 0.5s;
  }
 
  #butt:hover {

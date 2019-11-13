@@ -114,6 +114,7 @@ h1 {
     color: #b80909;
     margin-right: 25px;
     border: 1px solid #b80909;
+    transition: 0.5s;
 }
 
 .btn-full:hover {
@@ -126,6 +127,7 @@ h1 {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
+    transition: 0.5s;
 }
 
 .btn-nav:hover {
@@ -160,6 +162,7 @@ h1 {
     padding: 5px;
     display: block;
     background-color: white;
+    transition: 0.5s;
 }
 
 .social-icons ul li a:hover {
