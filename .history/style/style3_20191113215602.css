@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    overflow: hidden;
+}
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../img/pozadina.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
