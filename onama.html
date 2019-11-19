@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="style/style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Document</title>
 </head>
 
@@ -75,6 +77,68 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img src="img/moskva.jpg">
+                  </div>
+                  <div class="details">
+                      <h3>Moskva</h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/lisabon.jpg">
+                </div>
+                <div class="details">
+                    <h3>Lisabon</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/kopenhagen.jpeg">
+                </div>
+                <div class="details">
+                    <h3>Kopenhagen</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/london.jpg">
+                </div>
+                <div class="details">
+                    <h3>London</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/pariz.jpg">
+                </div>
+                <div class="details">
+                    <h3>Pariz</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/amsterdam.jpg">
+                </div>
+                <div class="details">
+                    <h3>Amsterdam</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="img/dablin.jpg">
+                </div>
+                <div class="details">
+                    <h3>Dablin</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
 
 
         <script type="text/javascript">
@@ -93,6 +157,25 @@
     </main>
     <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
     <script src="js/validacija.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
 </body>
 
 </html>

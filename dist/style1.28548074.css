@@ -1,0 +1,253 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 20px;
+  overflow-x: hidden;
+  color: #fff;
+  overflow: hidden;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/pozadina.f5209e1b.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.row {
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid #b80909;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 60px;
+}
+
+.main-nav li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 80px;
+  margin-right: 20px;
+}
+
+.main-nav ul {
+  margin-left: 80px;
+}
+
+.main-nav li a {
+  padding: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+.main-nav li a:hover {
+  border-bottom: 2px solid #b80909;
+}
+
+.main-content {
+  width: 1180px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #fff;
+  font-size: 150%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full {
+  background-color: #fff;
+  color: #b80909;
+  margin-right: 25px;
+  border: 1px solid #b80909;
+  transition: 0.5s;
+}
+
+.btn-full:hover {
+  background-color: #b80909;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-nav {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.btn-nav:hover {
+  background-color: #b80909;
+}
+
+.active {
+  border-bottom: 2px solid #1ab8e8;
+  color: #1ab8e8;
+}
+
+.naslov {
+  animation: colorchange 1s infinite;
+}
+
+.social-icons {
+  right: 22px;
+  bottom: 11px;
+  position: fixed;
+}
+
+.social-icons ul li {
+  list-style: none;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-icons ul li a {
+  color: #b80909;
+  border-radius: 50%;
+  border: 1px solid #b80909;
+  padding: 5px;
+  display: block;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.social-icons ul li a:hover {
+  background-color: #b80909;
+  color: #fff;
+  border: 1px solid white;
+}
+
+@keyframes colorchange {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #b80909;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  100% {
+    color: #fff;
+  }
+}
+.mobile-icon {
+  display: none;
+}
+
+/*RESPONZIVNOST*/
+@media only screen and (max-width: 1180px) {
+  .main-content {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+@media only screen and (max-width: 998px) {
+  h1 {
+    font-size: 120%;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 110%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: inline-block;
+    color: white;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .main-nav {
+    float: left;
+  }
+
+  .main-nav li {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn-full {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-height: 450px) {
+  .main-content {
+    width: 1180px;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*# sourceMappingURL=/style1.28548074.css.map */

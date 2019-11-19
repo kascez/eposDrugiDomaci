@@ -38,6 +38,7 @@ body {
     background: rgba(0, 0, 0, 0.6);
     transition: 0.5s;
     border-radius: 10%;
+    margin-bottom: 20px;
 }
 
 .container .card:hover {
@@ -162,12 +163,59 @@ body {
     display: none;
 }
 
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 380px;
+    background: #fff;
+}
+
+.swiper-slide .details {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.swiper-slide .details h3 {
+    font-size: 20px;
+    color: #b80909;
+    text-align: center;
+    line-height: 20px;
+}
+
+.imgBx img {
+    width: 300px;
+    height: 300px;
+}
+
 @media only screen and (max-width: 1180px) {
     .main-content {
         width: 100%;
         padding: 0 2%;
     }
 }
+
+@media only screen and (max-width: 1050px) {
+    .main-content {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .main-nav {
+        width: 100;
+    }
+
+    .container {
+        width: 500px;
+    }
+}
+
 
 @media only screen and (max-width: 998px) {
     h1 {
@@ -184,7 +232,8 @@ body {
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 110%;
+        font-size: 150%;
+        margin-top: 20px;
     }
 
     .main-nav{
@@ -207,18 +256,26 @@ body {
         display: block;
         margin-top: 10px;
     }
+
+    .container {
+        width: 350px;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     .btn-full {
         margin-bottom: 10px;
     }
 
     h1 {
-        font-size: 100%;
+        font-size: 150%;
     }
     .container {
         width: 350px;
+    }
+
+    .main-nav {
+        width: 100%;
     }
 }
 
