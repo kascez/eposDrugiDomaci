@@ -27,17 +27,16 @@
             </div>
         </nav>
         <h1>O NAMA</h1>
+        <h2>Saznajte sve o našem start-up-u u tri koraka!</h2>
         <div class="container">
             <div class="card">
                 <div class="face face1">
                     <div class="content">
-                        <h2>Proslost</h2>
+                        <h2>Ideja</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi.
+                            Ideja da se započne ovaj start-up proizašla je iz želje da se građanima približe povoljnosti pri putovanjima koju današnjica omogućava.
                         </p>
-                        <a href="#">Procitaj vise</a>
+                        <a href="#">Pročitaj vise</a>
                     </div>
                 </div>
                 <div class="face face2">
@@ -47,13 +46,11 @@
             <div class="card">
                 <div class="face face1">
                     <div class="content">
-                        <h2>Sadasnjost</h2>
+                        <h2>Misija</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi.
+                            Misija za nas predstavlja omogućavanje našim korisnicima da na najjednostavniji mogući način započnu svoju avanturu i otiđu na dugo željenu destinaciju.
                         </p>
-                        <a href="#">Procitaj vise</a>
+                        <a href="#">Pročitaj vise</a>
                     </div>
                 </div>
                 <div class="face face2">
@@ -63,13 +60,11 @@
             <div class="card">
                 <div class="face face1">
                     <div class="content">
-                        <h2>Buducnost</h2>
+                        <h2>Vizija</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi.
+                            Postati sinonim za lakoću, jednostavnost i organizovanost putovanja.
                         </p>
-                        <a href="#">Procitaj vise</a>
+                        <a href="#">Pročitaj vise</a>
                     </div>
                 </div>
                 <div class="face face2">
@@ -77,6 +72,8 @@
                 </div>
             </div>
         </div>
+        <h1>Destinacije</h1>
+        <h2>U ovoj sekciji možete pročitati više o aktuelnim destinacijama za putovanja!</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -139,43 +136,12 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
-
-
-        <script type="text/javascript">
-            function slideshow() {
-                var x = document.getElementById('check-class');
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        </script>
-
-
-
     </main>
     <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
     <script src="js/validacija.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-      </script>
+    <script src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
 </body>
 
 </html>
