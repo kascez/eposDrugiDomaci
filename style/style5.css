@@ -44,10 +44,6 @@ body {
     transition: 0.5s;
 }
 
-#registration:hover {
-    background: linear-gradient(to right, #141e30, #243b55);
-}
-
 #button, #fname, #lname, #pass, #email, #cpass {
     padding: 10px;
     border-radius: 5px;
@@ -153,6 +149,14 @@ body {
 .text-danger {
     color: #b80909;
     font-size: 70%;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b80909;
+    position: absolute;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 1180px) {

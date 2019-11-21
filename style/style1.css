@@ -183,6 +183,14 @@ h1 {
     display: none;
 }
 
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #b80909;
+    position: absolute;
+    border-radius: 15px;
+}
+
 /*RESPONZIVNOST*/
 
 @media only screen and (max-width: 1180px) {
