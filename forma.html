@@ -12,6 +12,7 @@
 
 <body>
     <main id="swup" class="transition-fade">
+        
         <nav>
             <div class="row clearfix">
                 <img src="img/logo1.png" class="logo">
@@ -24,6 +25,7 @@
                 <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i class="fas fa-bars"></i></a>
             </div>
         </nav>
+
         <div class="simple-form">
             <form action="#" onsubmit="return validation()" id="registration">
                 <h1>FORMA ZA REGISTRACIJU</h1><br><br>
@@ -53,23 +55,11 @@
             </form>
         </div>
 
-        <script type="text/javascript">
-            function slideshow() {
-                var x = document.getElementById('check-class');
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        </script>
-
-
-
     </main>
     <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
     <script src="js/validacija.js"></script>
     <script src="js/mouseMove.js"></script>
+    <script src="js/meniFunkcija.js"></script>
 </body>
 
 </html>
