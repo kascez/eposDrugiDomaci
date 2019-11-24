@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AirSolutions</title>
+</head>
+
+<body>
+    <main id = "swup" class="transition-fade">
+        <header class="home-area" id="particles-js">
+            <nav>
+                <div class="row clearfix">
+                    <img src="img/logo1.png" class="logo">
+                    <ul class="main-nav animated flipInY" id="check-class">
+                        <li class="active"><a href="pocetna.html">POČETNA</a></li>
+                        <li><a href="onama.html">O NAMA</a></li>
+                        <li><a href="iskustva.html">ISKUSTVA</a></li>
+                        <li><a href="pomoc.html">POMOĆ</a></li>
+                    </ul>
+                    <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i
+                            class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+
+            <div class="main-content">
+                <h1>DOBRODOŠLI NA SAJT <span class="naslov">AIRSOLUTIONS</span>.<br>ZAPOČNI SVOJU NEZABORAVNU AVANTURU
+                    VEĆ
+                    DANAS</h1>
+                <a href="onama.html" class="btn btn-full">Više o nama</a>
+                <a href="forma.html" class="btn btn-nav">Prijavi se</a>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        
+    </main>
+    <script type="text/javascript">
+        function slideshow() {
+            var x = document.getElementById('check-class');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles1.js"></script>
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script>
+
+        var swup = new Swup();
+    
+    </script>
+</body>
+
+</html>

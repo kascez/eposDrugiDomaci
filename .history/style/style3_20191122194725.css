@@ -73,7 +73,7 @@ body {
     padding-bottom: 30px;
     text-align: center;
     color: #fff;
-    text-shadow: -1px 0 #b80909, 0 1px #b80909, 1px 0 #b80909, 0 -1px #b80909;
+    border-bottom: 3px solid #b80909;
 }
 .slideshow{
   margin: 0 auto;
