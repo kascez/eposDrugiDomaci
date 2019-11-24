@@ -159,6 +159,10 @@ body {
     border-radius: 15px;
 }
 
+.active {
+    border-bottom: 2px solid #1ab8e8;
+}
+
 @media only screen and (max-width: 1180px) {
     .main-content {
         width: 100%;

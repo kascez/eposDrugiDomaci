@@ -13,8 +13,9 @@
 </head>
 
 <body>
-    <main id = "swup" class="transition-fade">
+    <main id="swup" class="transition-fade">
         <header class="home-area" id="particles-js">
+
             <nav>
                 <div class="row clearfix">
                     <img src="img/logo1.png" class="logo">
@@ -25,7 +26,7 @@
                         <li><a href="pomoc.html">POMOĆ</a></li>
                     </ul>
                     <a href="#" class="mobile-icon" id="check-class" onclick="slideshow()"><i
-                            class="fas fa-bars"></i></a>
+                        class="fas fa-bars"></i></a>
                 </div>
             </nav>
 
@@ -36,6 +37,7 @@
                 <a href="onama.html" class="btn btn-full">Više o nama</a>
                 <a href="forma.html" class="btn btn-nav">Prijavi se</a>
             </div>
+
             <div class="social-icons">
                 <ul>
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -44,30 +46,16 @@
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
+
         </header>
-
-        
     </main>
-    <script type="text/javascript">
-        function slideshow() {
-            var x = document.getElementById('check-class');
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-
+    
+    <script type="text/javascript" src="js/meniFunkcija.js"></script>
     <script src="https://kit.fontawesome.com/62e22b5dd6.js" crossorigin="anonymous"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles1.js"></script>
     <script src="/node_modules/swup/dist/swup.min.js"></script>
-    <script>
-
-        var swup = new Swup();
-    
-    </script>
+    <script src="/js/swup.js"></script>
 </body>
 
 </html>
