@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 * {
     margin: 0px;
@@ -85,11 +85,14 @@ body {
     }
     
     #hero-txt h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fd17ca;
     font-weight: bold;
     font-size: 70px;
     text-align:right;
     }
     #hero-txt p{
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
     text-align:right;
     color: #000;
@@ -98,37 +101,84 @@ body {
     overflow: hidden;
     margin-bottom: 20px;
     }
+    #insta-logo,
+    #fb,
+    #youtube{
+    float: right;
+    }
+    #insta-logo i,
+    #fb i,
+    #youtube i{
+    font-size: 40px;
+    color: #fd17ca;
+    margin-left: 10px;
+    margin-top:0;
+    }
+    #insta-logo i:hover,
+    #fb i:hover,
+    #youtube i:hover{
+    color:#eda83b; 
+    }
+    #black{
+    background: #000;
+    }
     #black .wrapper h2{
-    color: #b80909;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fd17ca;
     font-size: 70px;
     font-weight: bold;
     }
     #black .wrapper p{
-   
+    font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
     font-size: 25px;
     }
-    
+    #black .wrapper p span{
+    color: #eda83b;
+    }
+    .container-fluid{
+    margin-top: 20px;
+    }
+    .col-sm-3 {
+    text-align: center;
+    }
+    .col-sm-3 h3{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#000;
+    padding: 3px;
+    }
+    .col-sm-3 a:hover {
+    text-decoration: none;
+    }
+    .col-sm-3 a:hover h3{
+    color:#eda83b; 
+    }
     .post p{
         text-align: inherit;
-        color: #fff;
+        color: #524F4F;
         font-size: 20px;
-        
+        font-family:  'Source Sans Pro', sans-serif;
+        }
+        .post span p{
+        text-align: center;
+        font-size: 12px;
         }
         .post h1{
-        color: #fff;
+        color: #fd17ca;
+        font-family:  'Source Sans Pro', sans-serif;
         text-align: center;
         font-weight: bold;
         margin-bottom: 20px;
         }
         .post h2{
-        color: #1ab8e8;
+        color: #fd17ca;
         font-weight: bold;
-        
+        font-family:  'Source Sans Pro', sans-serif;
         }
         .post h3{
-        color: #b80909;
-        
+        color: #eda83b;
+        font-family:  'Source Sans Pro', sans-serif;
         }
         .post ul{
         list-style: disc;
@@ -137,14 +187,14 @@ body {
         .post ul li{
         font-size: 20px;
         color: #524F4F;
-        
+        font-family:  'Source Sans Pro', sans-serif;
         }
         .post a{
         color:#eda83b;
         text-decoration: underline;
         }
         .post a:hover{
-        color:#b80909; 
+        color:#fd17ca; 
         }
 
     /*Resp*/

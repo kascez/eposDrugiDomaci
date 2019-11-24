@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 * {
     margin: 0px;
@@ -85,11 +85,14 @@ body {
     }
     
     #hero-txt h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fd17ca;
     font-weight: bold;
     font-size: 70px;
     text-align:right;
     }
     #hero-txt p{
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
     text-align:right;
     color: #000;
@@ -98,7 +101,29 @@ body {
     overflow: hidden;
     margin-bottom: 20px;
     }
+    #insta-logo,
+    #fb,
+    #youtube{
+    float: right;
+    }
+    #insta-logo i,
+    #fb i,
+    #youtube i{
+    font-size: 40px;
+    color: #fd17ca;
+    margin-left: 10px;
+    margin-top:0;
+    }
+    #insta-logo i:hover,
+    #fb i:hover,
+    #youtube i:hover{
+    color:#eda83b; 
+    }
+    #black{
+    background: #000;
+    }
     #black .wrapper h2{
+    
     color: #b80909;
     font-size: 70px;
     font-weight: bold;

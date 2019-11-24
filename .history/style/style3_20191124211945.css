@@ -17,7 +17,6 @@ body {
     background-attachment:fixed;    
     color: #fff;
     font-size: 20px;
-    align-items: center;
 }
 .clearfix:after {
     content: ".";
@@ -39,7 +38,7 @@ body {
 }
 .main-nav {
     float: right;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 .main-nav li {
     display: inline-block;
@@ -74,7 +73,7 @@ body {
 /* ISKUSTVA */
 
 .iskustva {
-    margin-top: 2px;
+    margin-top: 40px;
     padding-bottom: 30px;
     text-align: center;
     color: #fff;

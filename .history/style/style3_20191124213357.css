@@ -96,6 +96,7 @@ body {
 }
 .content-carrousel{
   width:100%;
+  flex: none;
   position: absolute;
   float: right;
   animation: rotar 15s infinite linear;

@@ -83,7 +83,7 @@ body {
 .slideshow{
   margin: 0 auto;
   padding-top:80px;
-  height: 700px;
+  height: 500px;
   block-size: border-box;
 }
 .content{

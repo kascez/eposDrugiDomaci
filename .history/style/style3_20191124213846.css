@@ -96,8 +96,8 @@ body {
 }
 .content-carrousel{
   width:100%;
-  position: absolute;
-  float: right;
+  position: relative;
+  float: left;
   animation: rotar 15s infinite linear;
   transform-style: preserve-3d;
 }

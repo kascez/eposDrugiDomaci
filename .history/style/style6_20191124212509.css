@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 * {
     margin: 0px;
@@ -85,6 +85,8 @@ body {
     }
     
     #hero-txt h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fd17ca;
     font-weight: bold;
     font-size: 70px;
     text-align:right;

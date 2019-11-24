@@ -89,7 +89,7 @@ body {
 .content{
   margin:auto;
   width: 200px;
-  perspective: 1000px;
+  perspective: 700px;
   position: relative;
   padding-top: 100px;
 

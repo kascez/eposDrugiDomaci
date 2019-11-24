@@ -97,7 +97,7 @@ body {
 .content-carrousel{
   width:100%;
   position: absolute;
-  float: right;
+  float: left;
   animation: rotar 15s infinite linear;
   transform-style: preserve-3d;
 }
