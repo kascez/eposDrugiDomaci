@@ -229,7 +229,7 @@ body {
 @media only screen and (max-width: 1180px) {
   .main-content {
       width: 100%;
-      padding: 0 2%;
+      
   }
 }
 
@@ -260,7 +260,7 @@ body {
       color: white;
       float: right;
       margin-top: 30px;
-      margin-right: 20px;
+      margin-right: 40px;
   }
 
   .main-nav {

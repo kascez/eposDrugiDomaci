@@ -224,7 +224,7 @@ body {
   -moz-transition: .1s;
 }
 
-/*RESPONZIVNOST header*/
+/*RESPONZIVNOST*/
 
 @media only screen and (max-width: 1180px) {
   .main-content {
@@ -311,7 +311,7 @@ body {
 }
 @media only screen and (max-width: 950px) {
   .footer .col {
-    width: 33%;
+    width: 30%;
   }
   .footer .col h1 {
     font-size: 14px;
@@ -322,7 +322,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
     .footer .col {
-      width: 50%;
+      width: 45%;
     }
     .footer .col h1 {
       font-size: 14px;
@@ -356,7 +356,7 @@ body {
 }
 @media only screen and (max-width: 950px) {
   .content .content-carrousel {
-    width: 30%;
+    width: 33%;
   }
   .content .content-carrousel h3 {
     font-size: 14px;
@@ -367,7 +367,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
     .content .content-carrousel {
-      width: 45%;
+      width: 50%;
     }
     .content-carrousel .shadow h3 {
       font-size: 14px;

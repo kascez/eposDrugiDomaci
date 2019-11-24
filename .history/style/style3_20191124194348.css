@@ -224,7 +224,7 @@ body {
   -moz-transition: .1s;
 }
 
-/*RESPONZIVNOST header*/
+/*RESPONZIVNOST*/
 
 @media only screen and (max-width: 1180px) {
   .main-content {
@@ -356,28 +356,28 @@ body {
 }
 @media only screen and (max-width: 950px) {
   .content .content-carrousel {
-    width: 30%;
+    width: 33%;
   }
   .content .content-carrousel h3 {
     font-size: 14px;
   }
-  .content .content-carrousel.shadow {
+  .content .content-carrousel.slideshow {
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 500px) {
-    .content .content-carrousel {
-      width: 45%;
+    .content .slideshow {
+      width: 50%;
     }
-    .content-carrousel .shadow h3 {
+    .footer .col h1 {
       font-size: 14px;
     }
-    .content .content-carrousel:hover {
+    .footer .col ul li {
       font-size: 13px;
     }
 }
 @media only screen and (max-width: 340px) {
-  .content .content-carrousel {
+  .footer .col {
     width: 100%;
   }
 }

@@ -229,7 +229,6 @@ body {
 @media only screen and (max-width: 1180px) {
   .main-content {
       width: 100%;
-      padding: 0 2%;
   }
 }
 

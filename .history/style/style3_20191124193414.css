@@ -224,7 +224,7 @@ body {
   -moz-transition: .1s;
 }
 
-/*RESPONZIVNOST header*/
+/*RESPONZIVNOST*/
 
 @media only screen and (max-width: 1180px) {
   .main-content {
@@ -338,15 +338,15 @@ body {
 }
 
 /*Responzivnost slideshow*/
-
-@media only screen and (min-width: 1280px) {
-  .slideshow {
+@media only screen and (max-width: 1180px) {
+  .contain {
     width: 1200px;
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 1139px) {
-  .content .social {
+
+@media only screen and (max-width: 998px) {
+  .contain .social {
     width: 1000px;
     display: block;
   }
@@ -354,30 +354,47 @@ body {
     margin: 0px;
   }
 }
-@media only screen and (max-width: 950px) {
-  .content .content-carrousel {
-    width: 30%;
+
+@media only screen and (max-width: 768px) {
+  h1 {
+      font-size: 110%;
   }
-  .content .content-carrousel h3 {
-    font-size: 14px;
+
+  .content{
+      display: none;
   }
-  .content .content-carrousel.shadow {
-    font-size: 13px;
+
+  .content.content-carrousel {
+      float: right;
+      margin-top: 30px;
+      margin-right: 20px;
+  }
+
+  .content {
+      float: left;
+  }
+
+  .content.content-carrousel {
+      margin-top: 10px;
   }
 }
-@media only screen and (max-width: 500px) {
-    .content .content-carrousel {
-      width: 45%;
-    }
-    .content-carrousel .shadow h3 {
-      font-size: 14px;
-    }
-    .content .content-carrousel:hover {
-      font-size: 13px;
-    }
+
+@media only screen and (max-width: 480px) {
+  .content-carrousel {
+      margin-bottom: 10px;
+  }
+
+  h3 {
+      font-size: 100%;
+  }
 }
-@media only screen and (max-width: 340px) {
-  .content .content-carrousel {
-    width: 100%;
+
+@media only screen and (max-height: 450px) {
+  .slideshow {
+      width: 1180px;
+      position: absolute;
+      top: 80%;
+      left: 70%;
+      transform: translate(-50%, -50%);
   }
 }

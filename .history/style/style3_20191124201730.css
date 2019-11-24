@@ -229,7 +229,6 @@ body {
 @media only screen and (max-width: 1180px) {
   .main-content {
       width: 100%;
-      padding: 0 2%;
   }
 }
 
@@ -342,7 +341,7 @@ body {
 @media only screen and (min-width: 1280px) {
   .slideshow {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 1139px) {

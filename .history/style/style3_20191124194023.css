@@ -224,7 +224,7 @@ body {
   -moz-transition: .1s;
 }
 
-/*RESPONZIVNOST header*/
+/*RESPONZIVNOST*/
 
 @media only screen and (max-width: 1180px) {
   .main-content {
@@ -338,46 +338,3 @@ body {
 }
 
 /*Responzivnost slideshow*/
-
-@media only screen and (min-width: 1280px) {
-  .slideshow {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 1139px) {
-  .content .social {
-    width: 1000px;
-    display: block;
-  }
-  .social h1 {
-    margin: 0px;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .content .content-carrousel {
-    width: 30%;
-  }
-  .content .content-carrousel h3 {
-    font-size: 14px;
-  }
-  .content .content-carrousel.shadow {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 500px) {
-    .content .content-carrousel {
-      width: 45%;
-    }
-    .content-carrousel .shadow h3 {
-      font-size: 14px;
-    }
-    .content .content-carrousel:hover {
-      font-size: 13px;
-    }
-}
-@media only screen and (max-width: 340px) {
-  .content .content-carrousel {
-    width: 100%;
-  }
-}
