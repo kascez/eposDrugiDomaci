@@ -227,14 +227,14 @@ body {
 
 /*RESPONZIVNOST header*/
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1180px) {
   .main-content {
       width: 100%;
       padding: 0 2%;
   }
 }
 
-@media only screen and (max-width: 1139px) {
+@media only screen and (max-width: 998px) {
   h1 {
       font-size: 120%;
   }
@@ -247,7 +247,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 768px) {
   h1 {
       font-size: 110%;
   }
@@ -274,7 +274,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .btn-full {
       margin-bottom: 10px;
   }
@@ -284,7 +284,7 @@ body {
   }
 }
 
-@media only screen and (max-height: 340px) {
+@media only screen and (max-height: 450px) {
   .main-content {
       width: 1180px;
       position: absolute;
