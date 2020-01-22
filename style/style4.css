@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -25,6 +26,8 @@ body {
 }
 .row {
     background: rgba(0,0,0,0.5);
+    
+    height: 130px;
     border-bottom: 3px solid #b80909;
 }
 .logo {
@@ -33,6 +36,16 @@ body {
     float: left;
     margin-bottom: 10px;
     margin-left: 10px;
+    transform: rotate(0deg);
+    transition:all 0.4s ease-in-out;
+}
+
+.logo:hover{
+    transform: rotate(90deg);
+    transform-origin: 60px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0;
 }
 .main-nav {
     float: right;
@@ -65,16 +78,37 @@ body {
 }
 
 /* FAQ DEO */
-
-.container {
-    padding: 50px 100px;
+.zaglavlje{
+    display: inline-flexbox ;
 }
+.clock {
+   font-family: 'Advent Pro';
+   padding-top:6px;
+   width: auto;
+   height: 60px;
+   margin-top: 0px;
+   margin-left: 100px;
+   position: absolute;
+   text-align: center;
+   font-size: 40px;
+   border-radius: 5px;
+}
+.n{
+    font-family: inherit;
+}
+
 .faq {
-    padding-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 80px;
     text-align: center;
     text-shadow: -1px 0 #b80909, 0 1px #b80909, 1px 0 #b80909, 0 -1px #b80909;
     font-size: 30px;
+    position: relative;
 
+}
+
+.container {
+    padding: 50px 100px;
 }
 .line {
     padding-top: 50px;
@@ -291,7 +325,13 @@ input[type=submit]:hover {
         content: none;
     
       }
-      
+      .clock{
+          font-size: 35px;
+          background:none;
+          margin-top: -60px;
+          margin-left: 250px;
+
+      }
       .active, .accordion:hover {
         background-color: #0f6079;
       }
