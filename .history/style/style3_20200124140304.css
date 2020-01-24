@@ -174,7 +174,7 @@ body {
   width: 100%;
   position: relative;
   height: 100%;
-  
+  background-color: #b80909;
 }
 .footer .col {
   width: 190px;
@@ -228,10 +228,11 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  
   margin: 0 auto;
 }
 .globe {
-  height: 32vmin;
+  height: 30vmin;
   width: auto;
   cursor: grab;
 }

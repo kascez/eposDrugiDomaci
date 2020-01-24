@@ -70,6 +70,57 @@ body {
 .active {
   border-bottom: 2px solid #1ab8e8;
 }
+.menu__container {
+  max-width: 500px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  -webkit-transform: perspective(1000px) rotateX(-45deg) rotateY(0deg) rotateZ(0deg);
+          transform: perspective(1000px) rotateX(-45deg) rotateY(0deg) rotateZ(0deg);
+  -webkit-transform-origin: center center 0px;
+          transform-origin: center center 0px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.menu__container:hover {
+  -webkit-transform: perspective(1000px) rotateX(355deg) rotateY(0deg) rotateZ(0deg);
+          transform: perspective(1000px) rotateX(355deg) rotateY(0deg) rotateZ(0deg);
+  box-shadow: 0 10px 40px rgba(0,0,0,0);
+}
+.menu__container .menu {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+  max-width: 100%;
+  height: 100%;
+}
+.menu__container .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+.menu__container .menu a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.menu__container--3 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a7a6cb), color-stop(52%, #8989ba), to(#8989ba));
+  background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+  -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(-45deg) rotateZ(0deg);
+          transform: perspective(1000px) rotateX(0deg) rotateY(-45deg) rotateZ(0deg);
+}
+.menu__container--3:hover {
+  -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 
 /* ISKUSTVA */
 

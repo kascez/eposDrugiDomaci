@@ -165,7 +165,7 @@ body {
 .dummy_page {
   height: 200px;
   width: 100%;
-  background-color: #f0f0f0;
+ 
   text-align: center;
   box-sizing: border-box;
   padding: 60px 0px;
@@ -231,7 +231,7 @@ body {
   margin: 0 auto;
 }
 .globe {
-  height: 32vmin;
+  height: 30vmin;
   width: auto;
   cursor: grab;
 }

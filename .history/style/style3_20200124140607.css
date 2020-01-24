@@ -231,7 +231,8 @@ body {
   margin: 0 auto;
 }
 .globe {
-  height: 32vmin;
+  background-color: #1ab8e8;
+  height: 30vmin;
   width: auto;
   cursor: grab;
 }

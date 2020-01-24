@@ -226,12 +226,13 @@ body {
 }
 
 .container {
+  background-color: #1ab8e8;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 .globe {
-  height: 32vmin;
+  height: 30vmin;
   width: auto;
   cursor: grab;
 }
